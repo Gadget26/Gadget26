@@ -7,6 +7,7 @@ Folio: This folder consist of screenshots of my Portfolio website and my project
 
 SQL: This folder consist of sample codes of SQL queries that I have created for work. To view, please open in notepad++ or SQL server.
 
+Net_C#: The folder consist of samples of C# code in .NET framework. To view the code, please open in notepad++ or visual studio.
 
 If you have any questions/feedback, please reach out to me via email at shanny8389@gmail.com.
 
