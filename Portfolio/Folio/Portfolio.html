@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="../Bootstrap5/css/aos.css">
+    <link rel="stylesheet" href="../Bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap5/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Bootstrap5/css/fonts.css">
+
+    <!--BootstrapMade CSS Styles -->
+    <link rel="stylesheet" href="../Bootstrap5/css/glightbox.css">
+    <link rel="stylesheet" href="../Bootstrap5/css/swiper-bundle.css">
+
+    <!--Custom CSS Styles -->
+    <link rel="stylesheet" href="../Bootstrap5/css/Foliostyles.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title> TSW | Web Developer</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+        <div data-aos="zoom-in" data-aos-delay="100">
+            <h1>Tarsheika <br />West</h1>
+            <p>I'm A <strong><span class="typed" data-typed-items="Developer, Volunteer, Cosplayer"></span></strong></p>
+        </div>
+    </section><!-- End Hero -->
+
+
+    <!-- More about -->
+    <section id="about" class="more-about mt-5">
+        <h2>About Me</h2>
+        <p>
+            Hi! My name is Tarsheika West. I’m an Applications Developer. I mainly specialize in developing and managing internal applications, supporting large scale applications, and team collaboration. My career aspirations is to become a full-fledged Front-End Developer. I love to develop and support applications and I love being able to learn and grow. Please feel free to check out my page and get to know more about me.
+        </p>
+        <div class="text-center text-white">
+            <button type="submit" id="enter-btn" class="enter-btn" onclick="Resume();">View Resume</button>
+        </div>
+    </section><!-- End About Me -->
+
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="../Bootstrap5/custom-icons/icons-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="../Bootstrap5/custom-icons/icons-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="../Bootstrap5/custom-icons/icons-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img src="../Bootstrap5/custom-icons/icons-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="../Bootstrap5/custom-icons/icons-sql.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section><!-- End Skills -->
+
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Featured Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="../Site/images/NCNW_logo.png" alt="NCNW" loading="lazy" class="project-pic pb-3" />
+                <h3 class="project-title pt-2">NCNW NFAS Website</h3>
+                <p class="project-details">
+                    Provides details of the official website of NCNW North Fulton Area Section
+                </p>
+                <div class="text-center text-white">
+                    <button type="submit" id="enter-btn" class="enter-btn" onclick="NCNW();">Enter</button>
+                </div>
+            </div>
+            <div class="project-container project-card">
+                <img src="../Site/images/AME_Logo.png" alt="Allen Chapel" loading="lazy" class="project-pic" style="width:60px;height:50px;" />
+                <h3 class="project-title">Allen Chapel AME Church</h3>
+                <p class="project-details">
+                    Provides details of the official website of Allen Chapel AME Church
+                </p>
+
+                <div class="text-center text-white">
+                    <button type="submit" id="enter-btn" class="enter-btn" onclick="AME();">Enter</button>
+                </div>
+            </div>
+            <div class="project-container project-card">
+                <img src="../Site/images/BIA_Logo.png" alt="greeny-earth" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Data Requests</h3>
+                <p class="project-details">
+                    Provides details of the UPS data requests reporting application
+                </p>
+                <div class="text-center text-white">
+                    <button type="submit" id="enter-btn" class="enter-btn" onclick="DataReq();">Enter</button>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Project -->
+    <!-- Volunteerism Section  -->
+    <section id="counts" class="counts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Volunteerism</h2>
+                <blockquote class="blockquote">
+                    <h3 class="mb-3">"Service is the rent we pay for the privilege of living on this earth."</h3>
+                    <footer class="blockquote-footer text-right" style="background-color:#fff;"><cite title="Source Title">Shirley Chisolm</cite></footer>
+                </blockquote>
+            </div>
+            <div class="row no-gutters">
+                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-end">
+                    <img class="p-2 shadow-lg rounded-3" src="images/img4.jpg" alt="dst" width="250" height="450">
+                </div>
+                <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+                    <div class="content d-flex flex-column justify-content-center">
+                        <p class="justify-content-center">
+                            Outside of my career, I LOVE to volunteer. I am  involved in numerous civic and women's organizations including NAACP, Girl Scouts, NCNW,
+                            and Delta Sigma Theta Sorority, Incorporated where I hold key leadership positions that continues to make a difference in the community and my life.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-emoji-smile"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2" class="purecounter"></span>
+                                    <p><strong>Hours of Service</strong> in the Metro Atlanta area.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-journal-richtext"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2" class="purecounter"></span>
+                                    <p><strong>Organizations</strong> that I am a member of including NAACP, Delta Sigma Theta, and NCNW.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-clock"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="4" class="purecounter"></span>
+                                    <p><strong>Years of Service</strong> given to my local community.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="bi bi-award"></i>
+                                    <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="4" class="purecounter"></span>
+                                    <p>
+                                        <strong>Leadership Roles</strong> that I currently hold including Secretary (NAACP), Technology Chair (NCNW)
+                                        and Gold Award Coach (Girl Scouts).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End .content-->
+                </div>
+            </div>
+        </div>
+    </section><!-- End Volunteer Section -->
+
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xdoyjpbz" method="POST">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="name"><span class="input-group-text">@</span></label>
+                            <input type="text" id="name" class="input-field" name="sender-name" placeholder="Enter Your Name" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="email"><span class="input-group-text"><i class="bi-envelope mb-1"></i></span></label>
+                            <input type="email" id="email" class="input-field" name="sender-email" placeholder="Enter Your Email" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="email"><span class="input-group-text"><i class="bi-pencil"></i></span></label>
+                            <input type="text" id="subject" class="input-field" name="subject" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" class="textarea" cols="60" rows="10" placeholder="Enter Your Message" name="message" required></textarea>
+                    </div>
+                    <div class="text-center"><button type="submit" id="submit-btn" class="submit-btn">Send Message</button></div>
+                </form>
+            </div>
+        </div>
+    </section><!-- End Contact -->
+
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials mx-2">
+        <i class="bi bi-twitter socicon text-center py-2" target="_blank" alt="Twitter" loading="lazy"></i>
+        <i class="bi bi-instagram socicon text-center py-2" target="_blank" alt="Instagram" loading="lazy"></i>
+        <i class="bi bi-facebook socicon text-center py-2" target="_blank" alt="Facebook" loading="lazy"></i>
+        <i class="bi bi-linkedin socicon text-center py-2" target="_blank" alt="linkedIn" loading="lazy"></i>
+    </div>
+
+    <div id="preloader"></div>
+    <!-- Scroll to top -->
+    <i class="bi bi-arrow-up text-center py-2 scroll-up up-arrow" id="scroll-up"></i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2021</p>
+        <p class="copy">
+            Built with &#x2661;, <a href="https://bootstrapmade.com/" style="color:green;">
+                BootstrapMade
+            </a> and
+            <a href="https://www.linkedin.com/in/tarsheika-west/" target="_blank">Me</a>
+        </p>
+    </footer> <!-- End Footer -->
+
+
+    <!-- Website scripts -->
+    <script src="../Bootstrap5/js/bootstrap.js"></script>
+    <script src="../Bootstrap5/js/bootstrap.bundle.js"></script>
+
+    <!-- Bootstrapmade scripts -->
+    <script src="../Bootstrap5/js/aos.js"></script>
+    <script src="../Bootstrap5/js/glightbox.min.js"></script>
+    <script src="../Bootstrap5/js/purecounter.js"></script>
+    <script src="../Bootstrap5/js/swiper-bundle.min.js"></script>
+    <script src="../Bootstrap5/js/typed.min.js"></script>
+    <script src="../Bootstrap5/js/noframework.waypoints.js"></script>
+
+    <!-- Custom Website scripts -->
+    <script src="../Bootstrap5/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
